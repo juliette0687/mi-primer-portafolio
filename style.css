@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f6fa;
+  color: #1d2733;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 2rem max(1.5rem, calc((100% - 900px) / 2)) 4rem;
+  background: #173b63;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  margin-bottom: 4rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.etiqueta {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+main {
+  width: min(900px, 90%);
+  margin: 3rem auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.tarjeta {
+  padding: 1.5rem;
+  border: 1px solid #d5deea;
+  border-radius: 12px;
+  background: white;
+}
+
+footer {
+  padding: 1.5rem;
+  color: #526273;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: flex-start;
+  }
+}
